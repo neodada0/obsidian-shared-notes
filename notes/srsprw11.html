@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoundBridge_논문용어집</title>
+<meta name="description" content="# SoundBridge 논문 용어집 이번 논문에서 사용할 영문·한글 용어와 연구 내 정의, 측정 범위, 해석상 주의점을 기록한다. 일반적인 학술 개념과 이 연구의 조작적 정의를 구분한다.">
+<link rel="canonical" href="https://neodada0.github.io/obsidian-shared-notes/notes/srsprw11.html">
+<meta property="og:url" content="https://neodada0.github.io/obsidian-shared-notes/notes/srsprw11.html">
+
+<link rel="icon" type="image/png" href="https://cmdspace.work/assets/logos/cmds-logo-round.png">
+<link rel="apple-touch-icon" href="https://cmdspace.work/assets/logos/cmds-logo-round.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CMDSPACE">
+<meta property="og:title" content="SoundBridge_논문용어집">
+<meta property="og:description" content="# SoundBridge 논문 용어집 이번 논문에서 사용할 영문·한글 용어와 연구 내 정의, 측정 범위, 해석상 주의점을 기록한다. 일반적인 학술 개념과 이 연구의 조작적 정의를 구분한다.">
+<meta property="og:image" content="https://share.cmdspace.work/assets/og/og-share.png">
+<meta property="og:image:secure_url" content="https://share.cmdspace.work/assets/og/og-share.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CMDS Share — SoundBridge_논문용어집">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SoundBridge_논문용어집">
+<meta name="twitter:description" content="# SoundBridge 논문 용어집 이번 논문에서 사용할 영문·한글 용어와 연구 내 정의, 측정 범위, 해석상 주의점을 기록한다. 일반적인 학술 개념과 이 연구의 조작적 정의를 구분한다.">
+<meta name="twitter:image" content="https://share.cmdspace.work/assets/og/og-share.png">
+
+<script>
+(function(){try{var t=localStorage.getItem('cmds-theme');if(t){document.documentElement.dataset.theme=t;}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark';}else{document.documentElement.dataset.theme='light';}}catch(e){}})();
+</script>
+
+<style>
+:root {
+	--max: 750px;
+	--text: rgb(76, 79, 105);
+	--muted: rgb(124, 127, 147);
+	--bg: rgb(239, 241, 245);
+	--accent: hsl(calc(273 - 3), calc(62% * 1.02), calc(55% * 1.15));
+	--accent-light: hsl(calc(273 - 5), calc(62% * 1.05), calc(55% * 1.29));
+	--accent-on: #fff;
+	--border: rgb(188, 192, 204);
+	--code-bg: rgb(230, 233, 239);
+	--card-bg: rgb(230, 233, 239);
+	--pre-bg: rgb(17, 17, 27);
+	--pre-fg: rgb(76, 79, 105);
+	--graph-note: hsl(calc(273 - 3), calc(62% * 1.02), calc(55% * 1.15));
+}
+[data-theme="dark"] {
+	--text: rgb(198, 208, 245);
+	--muted: rgb(142, 149, 179);
+	--bg: rgb(30, 30, 46);
+	--accent: hsl(calc(273 - 3), calc(62% * 1.02), calc(55% * 1.15));
+	--accent-light: hsl(calc(273 - 5), calc(62% * 1.05), calc(55% * 1.29));
+	--accent-on: #fff;
+	--border: rgb(49, 50, 68);
+	--code-bg: rgb(24, 24, 37);
+	--card-bg: rgb(24, 24, 37);
+	--pre-bg: rgb(17, 17, 27);
+	--pre-fg: rgb(198, 208, 245);
+	--graph-note: hsl(calc(273 - 3), calc(62% * 1.02), calc(55% * 1.15));
+}
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+	--text: rgb(198, 208, 245);
+	--muted: rgb(142, 149, 179);
+	--bg: rgb(30, 30, 46);
+	--accent: hsl(calc(273 - 3), calc(62% * 1.02), calc(55% * 1.15));
+	--accent-light: hsl(calc(273 - 5), calc(62% * 1.05), calc(55% * 1.29));
+	--accent-on: #fff;
+	--border: rgb(49, 50, 68);
+	--code-bg: rgb(24, 24, 37);
+	--card-bg: rgb(24, 24, 37);
+	--pre-bg: rgb(17, 17, 27);
+	--pre-fg: rgb(198, 208, 245);
+	--graph-note: hsl(calc(273 - 3), calc(62% * 1.02), calc(55% * 1.15));
+	}
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { color-scheme: light dark; scroll-behavior: smooth; }
+html, body { overflow-x: hidden; }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Pretendard Variable', 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI', system-ui, sans-serif;
+	color: var(--text); background: var(--bg); line-height: 1.75;
+	font-size: 16px; -webkit-font-smoothing: antialiased;
+	transition: background-color .2s, color .2s;
+}
+
+.side-tools {
+	position: fixed; top: 1rem; right: 1rem; z-index: 100;
+	display: flex; flex-direction: column; gap: 0.5rem;
+}
+.tool-btn {
+	width: 36px; height: 36px;
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 50%;
+	cursor: pointer;
+	display: grid; place-items: center;
+	color: var(--text);
+	transition: border-color .15s, background .15s, color .15s;
+}
+.tool-btn:hover { border-color: var(--accent); }
+.tool-btn.active { border-color: var(--accent); color: var(--accent); }
+.tool-btn svg { width: 16px; height: 16px; }
+
+.side-panel {
+	position: fixed; top: 1rem; right: 4rem; z-index: 99;
+	width: 280px; max-height: calc(100vh - 2rem);
+	overflow-y: auto;
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 1rem 1.1rem;
+	display: none;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.side-panel.open { display: block; }
+.panel-head {
+	display: flex; align-items: center; justify-content: space-between;
+	margin-bottom: 0.6rem;
+}
+.panel-head h3 {
+	font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+	letter-spacing: 0.08em; color: var(--muted);
+}
+.pin-btn {
+	background: none; border: none; cursor: pointer; color: var(--muted);
+	width: 22px; height: 22px; display: grid; place-items: center;
+	border-radius: 5px;
+}
+.pin-btn:hover { color: var(--accent); background: var(--code-bg); }
+.pin-btn svg { width: 13px; height: 13px; }
+.g-controls { display: flex; gap: 2px; align-items: center; }
+
+/* docked mode: persistent right sidebar — TOC on top (scrolls), graph fills the rest */
+body.cmds-docked { padding-right: 312px; }
+body.cmds-docked .side-tools { right: calc(312px + 1rem); }
+body.cmds-docked #tocToggle, body.cmds-docked #graphToggle { display: none; }
+body.cmds-docked .pin-btn { color: var(--accent); }
+.side-dock {
+	position: fixed; top: 0; right: 0; bottom: 0; width: 312px; z-index: 98;
+	background: var(--card-bg); border-left: 1px solid var(--border);
+	display: flex; flex-direction: column;
+}
+.side-dock[hidden] { display: none; }
+.side-dock .side-panel {
+	position: static; display: block; width: auto; max-height: none;
+	border: none; border-radius: 0; box-shadow: none;
+}
+.side-dock #tocPanel { flex: 0 1 auto; min-height: 120px; max-height: 58%; overflow-y: auto; }
+.side-dock #graphPanel {
+	flex: 1 1 auto; min-height: 220px; overflow: hidden;
+	border-top: 1px solid var(--border);
+	display: flex; flex-direction: column;
+}
+.side-dock #graphPanel canvas { flex: 1; min-height: 0; }
+#graphCanvas { touch-action: none; cursor: grab; }
+#graphCanvas.dragging { cursor: grabbing; }
+#graphCanvas.on-node { cursor: pointer; }
+#tocList { display: flex; flex-direction: column; gap: 2px; }
+#tocList a {
+	color: var(--text); text-decoration: none; font-size: 0.82rem;
+	line-height: 1.4; padding: 0.25rem 0.5rem; border-radius: 6px;
+	display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+#tocList a:hover { background: var(--code-bg); color: var(--accent); }
+#tocList a.active { background: var(--code-bg); color: var(--accent); font-weight: 600; }
+#tocList a.toc-h2 { padding-left: 1.1rem; }
+#tocList a.toc-h3 { padding-left: 1.7rem; font-size: 0.78rem; color: var(--muted); }
+#tocList a.toc-h4 { padding-left: 2.3rem; font-size: 0.78rem; color: var(--muted); }
+#graphCanvas { width: 100%; display: block; }
+.graph-legend {
+	display: flex; gap: 0.9rem; margin-top: 0.5rem;
+	font-size: 0.7rem; color: var(--muted);
+}
+.graph-legend span::before {
+	content: ''; display: inline-block; width: 8px; height: 8px;
+	border-radius: 50%; margin-right: 4px;
+}
+.graph-legend .lg-link::before { background: var(--graph-note); }
+.graph-legend .lg-tag::before { background: #E985A2; }
+
+main {
+	max-width: var(--max); margin: 0 auto; padding: 4rem 1.5rem 3rem;
+}
+
+#note-content { font-size: 1rem; overflow-wrap: break-word; }
+#note-content h1, #note-content h2, #note-content h3,
+#note-content h4, #note-content h5, #note-content h6 {
+	font-weight: 700; letter-spacing: -0.02em; line-height: 1.3;
+	margin: 2rem 0 0.75rem; scroll-margin-top: 1.5rem;
+}
+#note-content h1 { font-size: 1.85rem; margin-top: 2.4rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+#note-content h2 { font-size: 1.4rem; margin-top: 2.2rem; }
+#note-content h3 { font-size: 1.18rem; }
+#note-content h4 { font-size: 1.06rem; color: var(--text); margin-top: 1.8rem; }
+#note-content h5 { font-size: 0.98rem; color: var(--text); }
+#note-content h6 { font-size: 0.9rem; color: var(--muted); }
+#note-content p { margin: 0.85rem 0; }
+#note-content ul, #note-content ol { margin: 0.85rem 0 0.85rem 1.4rem; }
+#note-content li { margin: 0.35rem 0; }
+#note-content li > ul, #note-content li > ol { margin: 0.25rem 0 0.25rem 1.2rem; }
+#note-content a {
+	color: var(--accent); text-decoration: none;
+	border-bottom: 1px solid transparent; transition: border-color .15s;
+}
+#note-content a:hover { border-bottom-color: var(--accent); }
+#note-content code {
+	background: var(--code-bg); padding: 0.18em 0.45em; border-radius: 6px;
+	font-size: 0.86em; font-family: 'SF Mono', 'Menlo', monospace;
+}
+#note-content pre {
+	background: var(--pre-bg); color: var(--pre-fg);
+	border: 1px solid var(--border);
+	padding: 1rem; border-radius: 12px;
+	overflow-x: auto; font-size: 0.85rem; line-height: 1.6;
+	font-family: 'SF Mono', 'Menlo', monospace; margin: 1rem 0;
+	position: relative;
+}
+.code-copy {
+	position: absolute; top: 8px; right: 8px;
+	width: 28px; height: 28px; border-radius: 6px;
+	background: color-mix(in srgb, var(--card-bg) 92%, transparent);
+	backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+	border: 1px solid var(--border);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.18);
+	color: var(--muted); cursor: pointer;
+	display: grid; place-items: center;
+	opacity: 0; transition: opacity .15s, color .15s, border-color .15s;
+}
+#note-content pre:hover .code-copy, .code-copy.copied { opacity: 1; }
+.code-copy:hover, .code-copy.copied { color: var(--accent); border-color: var(--accent); }
+.code-copy svg { width: 14px; height: 14px; }
+.h-anchor {
+	margin-left: 0.4rem; opacity: 0; color: var(--muted);
+	border-bottom: none !important; transition: opacity .15s, color .15s;
+}
+.h-anchor svg { width: 0.75em; height: 0.75em; }
+.h-anchor:hover { color: var(--accent); }
+#note-content h1:hover .h-anchor, #note-content h2:hover .h-anchor,
+#note-content h3:hover .h-anchor, #note-content h4:hover .h-anchor { opacity: 0.75; }
+#note-content pre code { background: transparent; padding: 0; font-size: 1em; }
+#note-content pre[data-lang]::before {
+	content: attr(data-lang);
+	position: absolute; top: 7px; left: 12px;
+	font-size: 0.66rem; font-weight: 600; letter-spacing: 0.05em;
+	color: var(--muted); opacity: 0.75; text-transform: lowercase;
+	font-family: -apple-system, sans-serif;
+}
+#note-content pre[data-lang] { padding-top: 1.9rem; }
+.mermaid-container { margin: 1rem 0; overflow-x: auto; text-align: center; }
+.mermaid-container svg { max-width: 100%; height: auto; }
+#note-content blockquote {
+	border-left: 3px solid var(--accent); padding: 0.5rem 1rem;
+	margin: 1rem 0; color: var(--muted); background: var(--code-bg);
+	border-radius: 0 8px 8px 0;
+}
+#note-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0; }
+#note-content table {
+	border-collapse: collapse; margin: 1rem 0;
+	font-size: 0.9rem;
+	/* wide tables scroll inside themselves instead of panning the page */
+	display: block; width: max-content; min-width: 60%; max-width: 100%;
+	overflow-x: auto;
+}
+#note-content th, #note-content td {
+	border: none; border-bottom: 1px solid var(--border);
+	padding: 0.65rem 0.9rem; text-align: left; vertical-align: top;
+}
+#note-content th { font-weight: 700; font-size: 0.85rem; color: var(--muted); border-bottom-width: 2px; }
+#note-content tr:last-child td { border-bottom: none; }
+#note-content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+#note-content mark { background: rgba(233,133,162,0.25); padding: 0 0.2rem; border-radius: 3px; }
+#note-content .callout {
+	--co: var(--accent);
+	background: var(--code-bg); border-radius: 8px; padding: 0.9rem 1rem;
+	margin: 1rem 0; border-left: 3px solid var(--co);
+}
+#note-content .callout-title {
+	display: flex; align-items: center; gap: 0.5em;
+	font-weight: 700; color: var(--co); margin: 0;
+}
+#note-content .callout-icon { display: flex; align-items: center; flex-shrink: 0; }
+#note-content .callout-icon svg, #note-content .callout-title > svg {
+	width: 1.1em; height: 1.1em;
+}
+#note-content .callout-title-inner { line-height: 1.45; }
+#note-content .callout-fold { display: none; }
+#note-content .callout-content > :first-child { margin-top: 0.45rem; }
+#note-content .callout-content > :last-child { margin-bottom: 0.1rem; }
+#note-content .callout[data-callout="abstract"], #note-content .callout[data-callout="summary"], #note-content .callout[data-callout="tldr"] { --co: #23a8b8; }
+#note-content .callout[data-callout="info"], #note-content .callout[data-callout="note"], #note-content .callout[data-callout="todo"] { --co: #4a8edb; }
+#note-content .callout[data-callout="tip"], #note-content .callout[data-callout="hint"], #note-content .callout[data-callout="important"] { --co: #23b89b; }
+#note-content .callout[data-callout="success"], #note-content .callout[data-callout="check"], #note-content .callout[data-callout="done"] { --co: #3aa657; }
+#note-content .callout[data-callout="question"], #note-content .callout[data-callout="help"], #note-content .callout[data-callout="faq"] { --co: #d9a13b; }
+#note-content .callout[data-callout="warning"], #note-content .callout[data-callout="caution"], #note-content .callout[data-callout="attention"] { --co: #e0813a; }
+#note-content .callout[data-callout="danger"], #note-content .callout[data-callout="error"], #note-content .callout[data-callout="failure"], #note-content .callout[data-callout="fail"], #note-content .callout[data-callout="missing"], #note-content .callout[data-callout="bug"] { --co: #e05252; }
+#note-content .callout[data-callout="example"] { --co: #8a6fd6; }
+#note-content .callout[data-callout="quote"], #note-content .callout[data-callout="cite"] { --co: var(--muted); }
+#note-content .internal-link {
+	color: var(--accent); border-bottom: 1px dashed var(--accent); cursor: help;
+}
+
+.cmds-meta {
+	max-width: var(--max); margin: 0 auto;
+	padding: 2rem 1.5rem 2rem; border-top: 1px solid var(--border);
+	font-size: 0.75rem; color: var(--muted); text-align: center;
+	display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+}
+.cmds-meta img { width: 28px; height: 28px; border-radius: 50%; }
+.cmds-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+.cmds-badge {
+	display: inline-flex; align-items: center; gap: 0.35em;
+	font-size: 0.7rem; font-weight: 600; color: var(--muted);
+	border: 1px solid var(--border); border-radius: 999px;
+	padding: 0.22rem 0.65rem; background: var(--card-bg);
+}
+.cmds-badge svg { width: 12px; height: 12px; }
+.cmds-badge.b-e2e { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
+.cmds-badge.b-soon { color: #e0813a; border-color: color-mix(in srgb, #e0813a 45%, var(--border)); }
+.cmds-badge.b-expired { color: #e05252; border-color: color-mix(in srgb, #e05252 45%, var(--border)); }
+.cmds-meta a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.cmds-meta a:hover { text-decoration: underline; }
+.cmds-theme-note { font-size: 0.68rem; color: var(--muted); opacity: 0.75; }
+.cmds-author-link {
+	margin-top: 0.35rem; font-size: 0.85rem; font-weight: 700;
+	letter-spacing: -0.01em;
+}
+.cmds-loading { color: var(--muted); font-style: italic; }
+.decrypt-error {
+	color: #c62828; background: #fce4ec; padding: 1rem; border-radius: 8px;
+	border: 1px solid #c62828; margin: 2rem 0; text-align: center;
+}
+[data-theme="dark"] .decrypt-error { background: #4a1a24; color: #ff8899; border-color: #ff8899; }
+
+@media (max-width: 720px) {
+	.side-panel { right: 1rem; top: 4rem; width: min(280px, calc(100vw - 2rem)); }
+}
+</style>
+<link rel="stylesheet" href="https://neodada0.github.io/obsidian-shared-notes/notes/css/b6987ec514117b1d3159a8b68759563c8434942d.css">
+<style>
+/* Exported themes can suppress native controls and depend on app-only variables.
+   Keep snapshot checkboxes self-contained, even when theme CSS is included. */
+#note-content li.task-list-item { list-style: none !important; }
+#note-content input[type="checkbox"] {
+	all: revert !important;
+	appearance: auto !important;
+	display: inline-block !important;
+	position: static !important;
+	width: 1em !important; height: 1em !important;
+	margin: 0 0.5em 0 0 !important;
+	vertical-align: -0.1em !important;
+	opacity: 1 !important;
+	accent-color: var(--accent) !important;
+}
+#note-content input[type="checkbox"]::before,
+#note-content input[type="checkbox"]::after { content: none !important; display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="side-tools">
+	<button class="tool-btn" id="themeToggle" aria-label="Toggle theme">
+		<svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+	</button>
+	<button class="tool-btn" id="tocToggle" aria-label="Table of contents" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h13"/></svg>
+	</button>
+	<button class="tool-btn" id="graphToggle" aria-label="Local graph" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M10.8 6.9 6.2 16m7-9.1 4.6 9.1M7.2 18h9.6"/></svg>
+	</button>
+	<button class="tool-btn" id="mdCopy" aria-label="Copy markdown" title="Copy markdown" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15H4.5A2.5 2.5 0 0 1 2 12.5v-8A2.5 2.5 0 0 1 4.5 2h8A2.5 2.5 0 0 1 15 4.5V5"/></svg>
+	</button>
+	<button class="tool-btn" id="mdDownload" aria-label="Download markdown" title="Download .md" hidden>
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5"/><path d="M4 19h16"/></svg>
+	</button>
+</div>
+
+<div class="side-dock" id="sideDock" hidden></div>
+
+<aside class="side-panel" id="tocPanel"><div class="panel-head"><h3>Contents</h3><button class="pin-btn" data-pin aria-label="Dock panels" title="Dock / undock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5M9 3h6l1 7 3 2H5l3-2 1-7z"/></svg></button></div><nav id="tocList"></nav></aside>
+<aside class="side-panel" id="graphPanel"><div class="panel-head"><h3>Local Graph</h3><span class="g-controls"><button class="pin-btn" id="gZoomOut" aria-label="Zoom out" title="Zoom out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg></button><button class="pin-btn" id="gZoomIn" aria-label="Zoom in" title="Zoom in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button class="pin-btn" id="gReset" aria-label="Reset view" title="Reset view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg></button><button class="pin-btn" data-pin aria-label="Dock panels" title="Dock / undock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5M9 3h6l1 7 3 2H5l3-2 1-7z"/></svg></button></span></div><canvas id="graphCanvas"></canvas>
+<div class="graph-legend"><span class="lg-link">Notes</span><span class="lg-tag">Tags</span></div></aside>
+
+<main>
+	<article id="note-content" class="markdown-rendered"><h1 data-heading="SoundBridge 논문 용어집" dir="auto">SoundBridge 논문 용어집</h1>
+<p dir="auto">이번 논문에서 사용할 영문·한글 용어와 연구 내 정의, 측정 범위, 해석상 주의점을 기록한다. 일반적인 학술 개념과 이 연구의 조작적 정의를 구분한다.</p>
+<h2 data-heading="저장·갱신 규칙" dir="auto">저장·갱신 규칙</h2>
+<ul>
+<li dir="auto">연구자가 대화에서 <code>[SAVE Term] 용어</code>를 입력하면 이 용어집에 해당 항목을 추가하거나 갱신한다. 영문 또는 한글 입력 모두 같은 규칙을 적용한다.</li>
+<li dir="auto">동일 개념은 영문·한글을 한 항목에 함께 기록하며, 기존 항목이 있으면 중복 생성하지 않는다.</li>
+<li dir="auto">각 항목은 표기, 정의, 연구에서 평가하는 측면, 해석의 범위, 원고 사용 표현, 근거 순서로 작성한다. 측정도구가 아닌 용어에는 해당되는 부분만 적용한다.</li>
+<li dir="auto">새로운 저장 요청을 처리할 때 지정 폴더의 최신 파일을 먼저 읽고 기존 내용과 연구자 결정을 보존한다. 정의나 권장 표기가 변경되면 변경 이력을 남긴다.</li>
+<li dir="auto">용어집 갱신은 원고 파일의 자동 수정을 의미하지 않는다. 원고 반영은 별도 요청에 따른다.</li>
+<li dir="auto">Obsidian에서는 이 Markdown 파일을 Vault에 넣어 사용한다. <code>[SAVE Term]</code>은 대화에서의 저장 요청 표식이며, Obsidian 태그는 <code>#SAVE-Term</code>을 사용한다.</li>
+<li dir="auto">저장 위치: <a data-tooltip-position="top" aria-label="https://drive.google.com/drive/folders/18JUaqT92Qo2BkPhNuua7rEtKvKNSZ6gs" rel="noopener nofollow" class="external-link" href="https://drive.google.com/drive/folders/18JUaqT92Qo2BkPhNuua7rEtKvKNSZ6gs" target="_blank">Google Drive — draft</a></li>
+</ul>
+<h2 data-heading="용어 목록" dir="auto">용어 목록</h2>
+<ul>
+<li dir="auto"><a data-href="#Speech generalization probe — 말소리 일반화 평가 과제" href="#Speech generalization probe — 말소리 일반화 평가 과제" class="internal-link" target="_blank" rel="noopener nofollow">Speech generalization probe — 말소리 일반화 평가 과제</a></li>
+</ul>
+<h2 data-heading="Speech generalization probe — 말소리 일반화 평가 과제" dir="auto">Speech generalization probe — 말소리 일반화 평가 과제</h2>
+<p dir="auto">등록일: 2026-09-30 · 상태: 연구자 저장 요청에 따른 논문 사용 용어</p>
+<h3 data-heading="1. 표기와 사용 범위" dir="auto">1. 표기와 사용 범위</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>표기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영문 용어</td>
+<td>speech generalization probe</td>
+</tr>
+<tr>
+<td>한글 용어</td>
+<td>말소리 일반화 평가 과제</td>
+</tr>
+<tr>
+<td>첫 소개 시 영문</td>
+<td>a study-developed speech generalization probe</td>
+</tr>
+<tr>
+<td>첫 소개 시 한글</td>
+<td>연구자 개발 말소리 일반화 평가 과제</td>
+</tr>
+<tr>
+<td>이후 본문</td>
+<td>the speech generalization probe; 문맥이 명확하면 the probe</td>
+</tr>
+<tr>
+<td>결과 지표</td>
+<td>probe target PCC</td>
+</tr>
+<tr>
+<td>결과 지표의 한글 설명</td>
+<td>일반화 평가 과제의 목표 자음정확도</td>
+</tr>
+</tbody>
+</table>
+<p dir="auto">이 명칭은 연구자가 개발한 평가 과제의 목적과 내용을 설명하는 표현이다. 특정 표준화 검사의 고유명이나 일반화가 입증되었다는 결론을 뜻하지 않는다. <code>probe</code> 자체가 일반화와 동의어인 것은 아니다.</p>
+<h3 data-heading="2. 정의" dir="auto">2. 정의</h3>
+<p dir="auto"><strong>한글:</strong> 치료와 가정연습에 사용하지 않은 어휘를 활용하여, 목표 말소리 산출이 비훈련 어휘로 전이되는지를 단어·구·문장 수준에서 평가하는 연구자 개발 과제이다. 이 연구에서는 구조화된 산출 조건에서 자음정확도를 측정한다.</p>
+<p dir="auto"><strong>English:</strong> A study-developed assessment designed to examine generalization of target speech sounds to untrained lexical items at the word, phrase, and sentence levels. In this study, consonant accuracy is measured under structured elicitation conditions.</p>
+<p dir="auto">여기서 <strong>비훈련(untrained)</strong>은 대면치료와 SoundBridge 연습에 해당 어휘를 사용하지 않았다는 뜻이다. 아동이 그 단어를 모르거나 이전에 한 번도 접하지 않았다는 뜻은 아니다. 같은 평가 자극을 T0·T1·T2에 반복 사용하므로 <code>novel</code> 또는 <code>previously unseen</code>으로 표현하지 않는다.</p>
+<h3 data-heading="3. 연구에서 평가하는 측면" dir="auto">3. 연구에서 평가하는 측면</h3>
+<table>
+<thead>
+<tr>
+<th>평가 측면</th>
+<th>연구에서의 의미</th>
+<th>결과 해석의 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>비훈련 어휘로의 전이 / Generalization to untrained lexical items</td>
+<td>대면치료와 SoundBridge 연습에 사용하지 않은 단어에서도 목표 말소리를 정확하게 산출하는가</td>
+<td>비훈련 자극에서의 수행과 그 변화로 평가한다.</td>
+</tr>
+<tr>
+<td>언어단위 확장에 따른 수행 / Performance across linguistic units</td>
+<td>단어뿐 아니라 구·문장 수준에서도 목표 말소리를 정확하게 산출하는가</td>
+<td>언어단위별 정확도와 변화 양상을 평가한다. 단어에서 문장으로 전이된 경로 자체를 입증하지는 않는다.</td>
+</tr>
+</tbody>
+</table>
+<h3 data-heading="4. 이 연구의 실시·산출 방식" dir="auto">4. 이 연구의 실시·산출 방식</h3>
+<ul>
+<li dir="auto">평가 시점: 기초선(T0), 중간(T1), 중재 후(T2).</li>
+<li dir="auto">자극 구성: 아동의 치료 목표가 속한 음소군에 따라 연구개 파열음, 치경 마찰음, 파찰음 세트 중 해당 세트를 사용한다.</li>
+<li dir="auto">단어는 그림 이름대기로, 구는 두 그림의 이름을 연결하여 산출하도록 한다. 이름을 모르면 검사자가 제시한 후 다시 산출하도록 한다. 문장은 그림과 문장 모델을 제시한 후 모방하게 한다.</li>
+<li dir="auto">구·문장에는 단어 수준 과제의 어휘를 재사용한다. 따라서 세 언어단위의 어휘가 서로 독립적인 별도 자극 세트인 것은 아니다.</li>
+<li dir="auto"><strong>Probe target PCC</strong>는 배정된 음소군에 속하는 자음 중 정확하게 산출된 수를 해당 음소군의 채점 가능한 자음 기회 수로 나눈 뒤 100을 곱한 값이다. 들리지 않아 채점할 수 없는 산출은 분모에서 제외한다.</li>
+<li dir="auto">과제 수와 자음 기회 수는 다르다. 목표 PCC의 분모는 과제 수가 아닌 채점 가능한 목표 자음 기회 수이다.</li>
+<li dir="auto">이 과제의 목표 자음은 <strong>배정된 음소군</strong>으로 정의되므로, 아동별 치료 목표를 기준으로 분류한 K-APP 목표 자음과 범위를 혼용하지 않는다.</li>
+</ul>
+<h3 data-heading="5. 해석 시 지켜야 할 범위" dir="auto">5. 해석 시 지켜야 할 범위</h3>
+<p dir="auto"><strong>단어·구·문장을 모두 평가했다는 사실만으로 “단어에서 문장으로 전이되었다”고 결론 내릴 수 없다.</strong> 언어단위에 따른 수행을 측정한 것과, 단어 수준 학습이 구·문장 수행으로 전이되는 경로를 입증한 것은 다르다. 치료에서 구·문장 수준도 연습했다면 특히 그러하다.</p>
+<p dir="auto">문장 모방이 포함되어 있으므로 문장 수준 결과를 <strong>일상 대화에서의 자발적 사용</strong>과 동일하게 해석하지 않는다. 모방 과제도 비훈련 자극에 대한 수행을 평가할 수 있으나, 그 결과의 범위는 실제 실시 조건에 맞춰 기술한다.</p>
+<p dir="auto">명칭의 <code>generalization</code>은 평가 목적을 나타낸다. 결과에서는 관찰한 정확도와 변화를 먼저 보고하고, 비훈련 자극으로의 일반화에 관한 해석은 연구설계와 측정 조건을 고려해 제시한다. 단일군 연구에서 관찰된 변화만으로 중재의 인과효과를 확정하지 않는다.</p>
+<table>
+<thead>
+<tr>
+<th>권장 표현</th>
+<th>피하거나 별도 근거가 필요한 표현</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>비훈련 자극에서 목표 자음정확도가 향상되었다.</td>
+<td>단어에서 문장으로 전이되었다.</td>
+</tr>
+<tr>
+<td>단어·구·문장 수준에서 정확도 변화를 평가하였다.</td>
+<td>언어단위 간 전이 경로를 입증하였다.</td>
+</tr>
+<tr>
+<td>구조화된 평가 상황에서 비훈련 어휘에 대한 수행을 측정하였다.</td>
+<td>일상 대화로 일반화되었다.</td>
+</tr>
+<tr>
+<td>untrained words / untrained lexical items</td>
+<td>novel words / previously unseen words</td>
+</tr>
+</tbody>
+</table>
+<h3 data-heading="6. 원고에서 사용할 평가명·목적·결과 지표" dir="auto">6. 원고에서 사용할 평가명·목적·결과 지표</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>English</th>
+<th>한국어</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평가명</td>
+<td>Study-developed speech generalization probe</td>
+<td>연구자 개발 말소리 일반화 평가 과제</td>
+</tr>
+<tr>
+<td>목적 설명</td>
+<td>To examine generalization of target speech sounds to untrained lexical items at the word, phrase, and sentence levels</td>
+<td>비훈련 어휘로의 목표 말소리 전이를 단어·구·문장 수준에서 평가</td>
+</tr>
+<tr>
+<td>결과 지표</td>
+<td>Probe target PCC</td>
+<td>일반화 평가 과제의 목표 자음정확도</td>
+</tr>
+<tr>
+<td>부록 절 제목</td>
+<td>Speech Generalization Probe: Composition, Administration, and Scoring</td>
+<td>말소리 일반화 평가 과제: 구성, 실시 및 채점</td>
+</tr>
+</tbody>
+</table>
+<p dir="auto"><strong>영문 소개 문장</strong></p>
+<blockquote dir="auto">
+<p>A study-developed speech generalization probe was used to examine generalization of target speech sounds to untrained lexical items at the word, phrase, and sentence levels. The words were not used in face-to-face therapy or SoundBridge practice.</p>
+</blockquote>
+<p dir="auto"><strong>한글 대응 문장</strong></p>
+<blockquote dir="auto">
+<p>연구자 개발 말소리 일반화 평가 과제를 사용하여, 비훈련 어휘로의 목표 말소리 전이를 단어·구·문장 수준에서 평가하였다. 평가에 사용한 단어는 대면치료와 SoundBridge 연습에 사용하지 않았다.</p>
+</blockquote>
+<h3 data-heading="7. 용어 선택의 근거" dir="auto">7. 용어 선택의 근거</h3>
+<p dir="auto"><code>speech production probe</code>는 산출 평가라는 점은 드러내지만 이 연구의 핵심인 비훈련 어휘로의 전이 목적은 충분히 드러내지 못한다. 연구자 설명에 따라 <code>speech generalization probe</code>를 사용하고, 첫 소개에서 비훈련 어휘와 세 언어단위라는 범위를 명시한다.</p>
+<p dir="auto">다음 문헌은 관련 분야의 용어와 평가 구성 사례이다. 이 연구에서 개발한 과제의 타당도를 직접 입증하는 근거는 아니다.</p>
+<ol>
+<li dir="auto"><strong>Preston et al. (2014).</strong> <em>Ultrasound visual feedback treatment and practice variability for residual speech sound errors.</em> 비훈련 단어를 평가하는 <code>word-level probes</code>를 사용하고, 유지와 일반화를 평가하는 목적을 별도로 설명한다. <a data-tooltip-position="top" aria-label="https://pubmed.ncbi.nlm.nih.gov/25087938/" rel="noopener nofollow" class="external-link" href="https://pubmed.ncbi.nlm.nih.gov/25087938/" target="_blank">PubMed</a> · <a data-tooltip-position="top" aria-label="https://doi.org/10.1044/2014_JSLHR-S-14-0031" rel="noopener nofollow" class="external-link" href="https://doi.org/10.1044/2014_JSLHR-S-14-0031" target="_blank">DOI</a></li>
+<li dir="auto"><strong>Preston et al. (2024; online 2023).</strong> <em>A Randomized Controlled Trial of Treatment Distribution and Biofeedback Effects on Speech Production in School-Age Children With Apraxia of Speech.</em> <code>speech production probe</code> 및 <code>untreated phrase probes</code>라는 표현을 사용하며, 비훈련 구의 모방 산출로 일반화를 평가한다. <a data-tooltip-position="top" aria-label="https://talkbank.org/phon/access/Clinical/0docs/preston2023.pdf" rel="noopener nofollow" class="external-link" href="https://talkbank.org/phon/access/Clinical/0docs/preston2023.pdf" target="_blank">원문</a> · <a data-tooltip-position="top" aria-label="https://doi.org/10.1044/2023_JSLHR-22-00622" rel="noopener nofollow" class="external-link" href="https://doi.org/10.1044/2023_JSLHR-22-00622" target="_blank">DOI</a></li>
+<li dir="auto"><strong>서새희·정필연·심현섭 (2021).</strong> <em>Speech cues를 이용한 반복훈련이 뇌성마비 아동의 자음정확도 및 말명료도에 미치는 영향: 단일대상연구.</em> 비훈련 단어·문장의 자극일반화 평가와 비훈련문항 자음정확도를 구분하여 기술한다. <a data-tooltip-position="top" aria-label="https://www.eksss.org/archive/view_article?pid=pss-13-3-79" rel="noopener nofollow" class="external-link" href="https://www.eksss.org/archive/view_article?pid=pss-13-3-79" target="_blank">원문</a> · <a data-tooltip-position="top" aria-label="https://doi.org/10.13064/KSSS.2021.13.3.079" rel="noopener nofollow" class="external-link" href="https://doi.org/10.13064/KSSS.2021.13.3.079" target="_blank">DOI</a></li>
+</ol>
+<p dir="auto">연구 내 정의와 실시·채점 방식은 연구자가 검토한 부록 <code>Multimedia_App_01_v0.8_tracked_연구자 검토.docx</code> 및 2026-09-30 대화에서 제시한 평가 목적을 기준으로 정리하였다.</p>
+<h2 data-heading="변경 이력" dir="auto">변경 이력</h2>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>버전</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-09-30</td>
+<td>0.1</td>
+<td>용어집 생성. <code>[SAVE Term]</code> 저장 규칙과 speech generalization probe의 영문·한글 정의, 평가 측면, 해석 범위, 원고 표기 및 근거 등록.</td>
+</tr>
+</tbody>
+</table></article>
+</main>
+
+<footer class="cmds-meta">
+	<div class="cmds-badges"><span class="cmds-badge" id="expiryBadge" data-expires="1790773640267" data-lang="ko" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="expiryText"></span></span></div>
+	<a href="https://cmdspace.work" target="_blank" rel="noopener"><img src="https://cmdspace.work/assets/logos/cmds-logo-round.png" alt="CMDSPACE"></a>
+	<span>Shared via <a href="https://github.com/johnfkoo951/cmds-share" target="_blank" rel="noopener">CMDS Share</a></span>
+	<span class="cmds-theme-note">Theme: AnuPpuccin (Obsidian)</span>
+	<a class="cmds-author-link" href="https://cmdspace.work" target="_blank" rel="noopener">CMDSPACE</a>
+</footer>
+
+
+<script type="application/json" id="graph-data">{"title":"SoundBridge_논문용어집","nodes":[{"label":"SoundBridge_논문용어집","type":"note","level":0},{"label":"SoundBridge_논문해석_및_표현검토기준_v0.1","type":"note","level":1},{"label":"Methods_v1.0","type":"note","level":1},{"label":"Multimedia_App_03_v1.0","type":"note","level":1},{"label":"#SoundBridge","type":"tag","level":1},{"label":"#terminology","type":"tag","level":1},{"label":"#SAVE-Term","type":"tag","level":1},{"label":"Format_Original_Paper","type":"note","level":2},{"label":"SoundBridge_Figure_Table_Appendix_목록_v0.2","type":"note","level":2},{"label":"🏷️ 연구","type":"note","level":2},{"label":"📚 201 말소리 장애","type":"note","level":2},{"label":"📚 102 정량 연구","type":"note","level":2},{"label":"Methods_Figure1_SoundBridge_Play.png","type":"note","level":2},{"label":"Methods_Figure2_SoundBridge_Connect.png","type":"note","level":2},{"label":"Format_Multimedia_Appendix","type":"note","level":2}],"edges":[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[1,4],[2,7],[2,3],[2,8],[2,1],[2,9],[2,10],[2,11],[2,12],[2,13],[2,4],[3,14],[3,8],[3,9],[3,11],[3,10],[3,4]]}</script>
+<script type="text/plain" id="md-source">CiMgU291bmRCcmlkZ2Ug64W866y4IOyaqeyWtOynkQoK7J2067KIIOuFvOusuOyXkOyEnCDsgqzsmqntlaAg7JiB66y4wrftlZzquIAg7Jqp7Ja07JmAIOyXsOq1rCDrgrQg7KCV7J2YLCDsuKHsoJUg67KU7JyELCDtlbTshJ3sg4Eg7KO87J2Y7KCQ7J2EIOq4sOuhne2VnOuLpC4g7J2867CY7KCB7J24IO2VmeyIoCDqsJzrhZDqs7wg7J20IOyXsOq1rOydmCDsobDsnpHsoIEg7KCV7J2Y66W8IOq1rOu2hO2VnOuLpC4KCiMjIOyggOyepcK36rCx7IugIOq3nOy5mQoKLSDsl7DqtazsnpDqsIAg64yA7ZmU7JeQ7IScIGBbU0FWRSBUZXJtXSDsmqnslrRg66W8IOyeheugpe2VmOuptCDsnbQg7Jqp7Ja07KeR7JeQIO2VtOuLuSDtla3rqqnsnYQg7LaU6rCA7ZWY6rGw64KYIOqwseyLoO2VnOuLpC4g7JiB66y4IOuYkOuKlCDtlZzquIAg7J6F66ClIOuqqOuRkCDqsJnsnYAg6rec7LmZ7J2EIOyggeyaqe2VnOuLpC4KLSDrj5nsnbwg6rCc64WQ7J2AIOyYgeusuMK37ZWc6riA7J2EIO2VnCDtla3rqqnsl5Ag7ZWo6ruYIOq4sOuhne2VmOupsCwg6riw7KG0IO2VreuqqeydtCDsnojsnLzrqbQg7KSR67O1IOyDneyEse2VmOyngCDslYrripTri6QuCi0g6rCBIO2VreuqqeydgCDtkZzquLAsIOygleydmCwg7Jew6rWs7JeQ7IScIO2PieqwgO2VmOuKlCDsuKHrqbQsIO2VtOyEneydmCDrspTsnIQsIOybkOqzoCDsgqzsmqkg7ZGc7ZiELCDqt7zqsbAg7Iic7ISc66GcIOyekeyEse2VnOuLpC4g7Lih7KCV64+E6rWs6rCAIOyVhOuLjCDsmqnslrTsl5DripQg7ZW064u565CY64qUIOu2gOu2hOunjCDsoIHsmqntlZzri6QuCi0g7IOI66Gc7Jq0IOyggOyepSDsmpTssq3snYQg7LKY66as7ZWgIOuVjCDsp4DsoJUg7Y+0642U7J2YIOy1nOyLoCDtjIzsnbzsnYQg66i87KCAIOydveqzoCDquLDsobQg64K07Jqp6rO8IOyXsOq1rOyekCDqsrDsoJXsnYQg67O07KG07ZWc64ukLiDsoJXsnZjrgpgg6raM7J6lIO2RnOq4sOqwgCDrs4Dqsr3rkJjrqbQg67OA6rK9IOydtOugpeydhCDrgqjquLTri6QuCi0g7Jqp7Ja07KeRIOqwseyLoOydgCDsm5Dqs6Ag7YyM7J287J2YIOyekOuPmSDsiJjsoJXsnYQg7J2Y66+47ZWY7KeAIOyViuuKlOuLpC4g7JuQ6rOgIOuwmOyYgeydgCDrs4Trj4Qg7JqU7LKt7JeQIOuUsOuluOuLpC4KLSBPYnNpZGlhbuyXkOyEnOuKlCDsnbQgTWFya2Rvd24g7YyM7J287J2EIFZhdWx07JeQIOuEo+yWtCDsgqzsmqntlZzri6QuIGBbU0FWRSBUZXJtXWDsnYAg64yA7ZmU7JeQ7ISc7J2YIOyggOyepSDsmpTssq0g7ZGc7Iud7J2066mwLCBPYnNpZGlhbiDtg5zqt7jripQgYCNTQVZFLVRlcm1g7J2EIOyCrOyaqe2VnOuLpC4KLSDsoIDsnqUg7JyE7LmYOiBbR29vZ2xlIERyaXZlIOKAlCBkcmFmdF0oaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMThKVWFxVDkyUW8yQmtQaE51dWE3ckV0S3ZLTlNaNmdzKQoKIyMg7Jqp7Ja0IOuqqeuhnQoKLSBbWyNTcGVlY2ggZ2VuZXJhbGl6YXRpb24gcHJvYmUg4oCUIOunkOyGjOumrCDsnbzrsJjtmZQg7Y+J6rCAIOqzvOygnF1dCgojIyBTcGVlY2ggZ2VuZXJhbGl6YXRpb24gcHJvYmUg4oCUIOunkOyGjOumrCDsnbzrsJjtmZQg7Y+J6rCAIOqzvOygnAoK65Ox66Gd7J28OiAyMDI2LTA5LTMwIMK3IOyDge2DnDog7Jew6rWs7J6QIOyggOyepSDsmpTssq3sl5Ag65Sw66W4IOuFvOusuCDsgqzsmqkg7Jqp7Ja0CgojIyMgMS4g7ZGc6riw7JmAIOyCrOyaqSDrspTsnIQKCnwg6rWs67aEIHwg7ZGc6riwIHwKfCAtLS0gfCAtLS0gfAp8IOyYgeusuCDsmqnslrQgfCBzcGVlY2ggZ2VuZXJhbGl6YXRpb24gcHJvYmUgfAp8IO2VnOq4gCDsmqnslrQgfCDrp5Dshozrpqwg7J2867CY7ZmUIO2PieqwgCDqs7zsoJwgfAp8IOyyqyDshozqsJwg7IucIOyYgeusuCB8IGEgc3R1ZHktZGV2ZWxvcGVkIHNwZWVjaCBnZW5lcmFsaXphdGlvbiBwcm9iZSB8Cnwg7LKrIOyGjOqwnCDsi5wg7ZWc6riAIHwg7Jew6rWs7J6QIOqwnOuwnCDrp5Dshozrpqwg7J2867CY7ZmUIO2PieqwgCDqs7zsoJwgfAp8IOydtO2bhCDrs7jrrLggfCB0aGUgc3BlZWNoIGdlbmVyYWxpemF0aW9uIHByb2JlOyDrrLjrp6XsnbQg66qF7ZmV7ZWY66m0IHRoZSBwcm9iZSB8Cnwg6rKw6rO8IOyngO2RnCB8IHByb2JlIHRhcmdldCBQQ0MgfAp8IOqysOqzvCDsp4DtkZzsnZgg7ZWc6riAIOyEpOuqhSB8IOydvOuwmO2ZlCDtj4nqsIAg6rO87KCc7J2YIOuqqe2RnCDsnpDsnYzsoJXtmZXrj4QgfAoK7J20IOuqhey5reydgCDsl7DqtazsnpDqsIAg6rCc67Cc7ZWcIO2PieqwgCDqs7zsoJzsnZgg66qp7KCB6rO8IOuCtOyaqeydhCDshKTrqoXtlZjripQg7ZGc7ZiE7J2064ukLiDtirnsoJUg7ZGc7KSA7ZmUIOqygOyCrOydmCDqs6DsnKDrqoXsnbTrgpgg7J2867CY7ZmU6rCAIOyeheymneuQmOyXiOuLpOuKlCDqsrDroaDsnYQg65y77ZWY7KeAIOyViuuKlOuLpC4gYHByb2JlYCDsnpDssrTqsIAg7J2867CY7ZmU7JmAIOuPmeydmOyWtOyduCDqsoPsnYAg7JWE64uI64ukLgoKIyMjIDIuIOygleydmAoKKirtlZzquIA6Kiog7LmY66OM7JmAIOqwgOygleyXsOyKteyXkCDsgqzsmqntlZjsp4Ag7JWK7J2AIOyWtO2cmOulvCDtmZzsmqntlZjsl6wsIOuqqe2RnCDrp5Dshozrpqwg7IKw7Lac7J20IOu5hO2biOugqCDslrTtnJjroZwg7KCE7J2065CY64qU7KeA66W8IOuLqOyWtMK36rWswrfrrLjsnqUg7IiY7KSA7JeQ7IScIO2PieqwgO2VmOuKlCDsl7DqtazsnpAg6rCc67CcIOqzvOygnOydtOuLpC4g7J20IOyXsOq1rOyXkOyEnOuKlCDqtazsobDtmZTrkJwg7IKw7LacIOyhsOqxtOyXkOyEnCDsnpDsnYzsoJXtmZXrj4Trpbwg7Lih7KCV7ZWc64ukLgoKKipFbmdsaXNoOioqIEEgc3R1ZHktZGV2ZWxvcGVkIGFzc2Vzc21lbnQgZGVzaWduZWQgdG8gZXhhbWluZSBnZW5lcmFsaXphdGlvbiBvZiB0YXJnZXQgc3BlZWNoIHNvdW5kcyB0byB1bnRyYWluZWQgbGV4aWNhbCBpdGVtcyBhdCB0aGUgd29yZCwgcGhyYXNlLCBhbmQgc2VudGVuY2UgbGV2ZWxzLiBJbiB0aGlzIHN0dWR5LCBjb25zb25hbnQgYWNjdXJhY3kgaXMgbWVhc3VyZWQgdW5kZXIgc3RydWN0dXJlZCBlbGljaXRhdGlvbiBjb25kaXRpb25zLgoK7Jes6riw7IScICoq67mE7ZuI66CoKHVudHJhaW5lZCkqKuydgCDrjIDrqbTsuZjro4zsmYAgU291bmRCcmlkZ2Ug7Jew7Iq17JeQIO2VtOuLuSDslrTtnJjrpbwg7IKs7Jqp7ZWY7KeAIOyViuyVmOuLpOuKlCDrnLvsnbTri6QuIOyVhOuPmeydtCDqt7gg64uo7Ja066W8IOuqqOultOqxsOuCmCDsnbTsoITsl5Ag7ZWcIOuyiOuPhCDsoJHtlZjsp4Ag7JWK7JWY64uk64qUIOucu+ydgCDslYTri4jri6QuIOqwmeydgCDtj4nqsIAg7J6Q6re57J2EIFQwwrdUMcK3VDLsl5Ag67CY67O1IOyCrOyaqe2VmOuvgOuhnCBgbm92ZWxgIOuYkOuKlCBgcHJldmlvdXNseSB1bnNlZW5g7Jy866GcIO2RnO2YhO2VmOyngCDslYrripTri6QuCgojIyMgMy4g7Jew6rWs7JeQ7IScIO2PieqwgO2VmOuKlCDsuKHrqbQKCnwg7Y+J6rCAIOy4oeuptCB8IOyXsOq1rOyXkOyEnOydmCDsnZjrr7ggfCDqsrDqs7wg7ZW07ISd7J2YIOuylOychCB8CnwgLS0tIHwgLS0tIHwgLS0tIHwKfCDruYTtm4jroKgg7Ja07ZyY66Gc7J2YIOyghOydtCAvIEdlbmVyYWxpemF0aW9uIHRvIHVudHJhaW5lZCBsZXhpY2FsIGl0ZW1zIHwg64yA66m07LmY66OM7JmAIFNvdW5kQnJpZGdlIOyXsOyKteyXkCDsgqzsmqntlZjsp4Ag7JWK7J2AIOuLqOyWtOyXkOyEnOuPhCDrqqntkZwg66eQ7IaM66as66W8IOygle2Zle2VmOqyjCDsgrDstpztlZjripTqsIAgfCDruYTtm4jroKgg7J6Q6re57JeQ7ISc7J2YIOyImO2WieqzvCDqt7gg67OA7ZmU66GcIO2PieqwgO2VnOuLpC4gfAp8IOyWuOyWtOuLqOychCDtmZXsnqXsl5Ag65Sw66W4IOyImO2WiSAvIFBlcmZvcm1hbmNlIGFjcm9zcyBsaW5ndWlzdGljIHVuaXRzIHwg64uo7Ja067+QIOyVhOuLiOudvCDqtazCt+usuOyepSDsiJjspIDsl5DshJzrj4Qg66qp7ZGcIOunkOyGjOumrOulvCDsoJXtmZXtlZjqsowg7IKw7Lac7ZWY64qU6rCAIHwg7Ja47Ja064uo7JyE67OEIOygle2ZleuPhOyZgCDrs4DtmZQg7JaR7IOB7J2EIO2PieqwgO2VnOuLpC4g64uo7Ja07JeQ7IScIOusuOyepeycvOuhnCDsoITsnbTrkJwg6rK966GcIOyekOyytOulvCDsnoXspp3tlZjsp4DripQg7JWK64qU64ukLiB8CgojIyMgNC4g7J20IOyXsOq1rOydmCDsi6Tsi5zCt+yCsOy2nCDrsKnsi50KCi0g7Y+J6rCAIOyLnOygkDog6riw7LSI7ISgKFQwKSwg7KSR6rCEKFQxKSwg7KSR7J6sIO2bhChUMikuCi0g7J6Q6re5IOq1rOyEsTog7JWE64+Z7J2YIOy5mOujjCDrqqntkZzqsIAg7IaN7ZWcIOydjOyGjOq1sOyXkCDrlLDrnbwg7Jew6rWs6rCcIO2MjOyXtOydjCwg7LmY6rK9IOuniOywsOydjCwg7YyM7LCw7J2MIOyEuO2KuCDspJEg7ZW064u5IOyEuO2KuOulvCDsgqzsmqntlZzri6QuCi0g64uo7Ja064qUIOq3uOumvCDsnbTrpoTrjIDquLDroZwsIOq1rOuKlCDrkZAg6re466a87J2YIOydtOumhOydhCDsl7DqsrDtlZjsl6wg7IKw7Lac7ZWY64+E66GdIO2VnOuLpC4g7J2066aE7J2EIOuqqOultOuptCDqsoDsgqzsnpDqsIAg7KCc7Iuc7ZWcIO2bhCDri6Tsi5wg7IKw7Lac7ZWY64+E66GdIO2VnOuLpC4g66y47J6l7J2AIOq3uOumvOqzvCDrrLjsnqUg66qo64247J2EIOygnOyLnO2VnCDtm4Qg66qo67Cp7ZWY6rKMIO2VnOuLpC4KLSDqtazCt+usuOyepeyXkOuKlCDri6jslrQg7IiY7KSAIOqzvOygnOydmCDslrTtnJjrpbwg7J6s7IKs7Jqp7ZWc64ukLiDrlLDrnbzshJwg7IS4IOyWuOyWtOuLqOychOydmCDslrTtnJjqsIAg7ISc66GcIOuPheumveyggeyduCDrs4Trj4Qg7J6Q6re5IOyEuO2KuOyduCDqsoPsnYAg7JWE64uI64ukLgotICoqUHJvYmUgdGFyZ2V0IFBDQyoq64qUIOuwsOygleuQnCDsnYzshozqtbDsl5Ag7IaN7ZWY64qUIOyekOydjCDspJEg7KCV7ZmV7ZWY6rKMIOyCsOy2nOuQnCDsiJjrpbwg7ZW064u5IOydjOyGjOq1sOydmCDssYTsoJAg6rCA64ql7ZWcIOyekOydjCDquLDtmowg7IiY66GcIOuCmOuIiCDrkqQgMTAw7J2EIOqzse2VnCDqsJLsnbTri6QuIOuTpOumrOyngCDslYrslYQg7LGE7KCQ7ZWgIOyImCDsl4bripQg7IKw7Lac7J2AIOu2hOuqqOyXkOyEnCDsoJzsmbjtlZzri6QuCi0g6rO87KCcIOyImOyZgCDsnpDsnYwg6riw7ZqMIOyImOuKlCDri6TrpbTri6QuIOuqqe2RnCBQQ0PsnZgg67aE66qo64qUIOqzvOygnCDsiJjqsIAg7JWE64uMIOyxhOygkCDqsIDriqXtlZwg66qp7ZGcIOyekOydjCDquLDtmowg7IiY7J2064ukLgotIOydtCDqs7zsoJzsnZgg66qp7ZGcIOyekOydjOydgCAqKuuwsOygleuQnCDsnYzshozqtbAqKuycvOuhnCDsoJXsnZjrkJjrr4DroZwsIOyVhOuPmeuzhCDsuZjro4wg66qp7ZGc66W8IOq4sOykgOycvOuhnCDrtoTrpZjtlZwgSy1BUFAg66qp7ZGcIOyekOydjOqzvCDrspTsnITrpbwg7Zi87Jqp7ZWY7KeAIOyViuuKlOuLpC4KCiMjIyA1LiDtlbTshJ0g7IucIOyngOy8nOyVvCDtlaAg67KU7JyECgoqKuuLqOyWtMK36rWswrfrrLjsnqXsnYQg66qo65GQIO2PieqwgO2WiOuLpOuKlCDsgqzsi6Trp4zsnLzroZwg4oCc64uo7Ja07JeQ7IScIOusuOyepeycvOuhnCDsoITsnbTrkJjsl4jri6TigJ3qs6Ag6rKw66GgIOuCtOumtCDsiJgg7JeG64ukLioqIOyWuOyWtOuLqOychOyXkCDrlLDrpbgg7IiY7ZaJ7J2EIOy4oeygle2VnCDqsoPqs7wsIOuLqOyWtCDsiJjspIAg7ZWZ7Iq17J20IOq1rMK366y47J6lIOyImO2WieycvOuhnCDsoITsnbTrkJjripQg6rK966Gc66W8IOyeheymne2VnCDqsoPsnYAg64uk66W064ukLiDsuZjro4zsl5DshJwg6rWswrfrrLjsnqUg7IiY7KSA64+EIOyXsOyKte2WiOuLpOuptCDtirntnogg6re465+s7ZWY64ukLgoK66y47J6lIOuqqOuwqeydtCDtj6ztlajrkJjslrQg7J6I7Jy866+A66GcIOusuOyepSDsiJjspIAg6rKw6rO866W8ICoq7J287IOBIOuMgO2ZlOyXkOyEnOydmCDsnpDrsJzsoIEg7IKs7JqpKirqs7wg64+Z7J287ZWY6rKMIO2VtOyEne2VmOyngCDslYrripTri6QuIOuqqOuwqSDqs7zsoJzrj4Qg67mE7ZuI66CoIOyekOq3ueyXkCDrjIDtlZwg7IiY7ZaJ7J2EIO2PieqwgO2VoCDsiJgg7J6I7Jy864KYLCDqt7gg6rKw6rO87J2YIOuylOychOuKlCDsi6TsoJwg7Iuk7IucIOyhsOqxtOyXkCDrp57strAg6riw7Iig7ZWc64ukLgoK66qF7Lmt7J2YIGBnZW5lcmFsaXphdGlvbmDsnYAg7Y+J6rCAIOuqqeyggeydhCDrgpjtg4Drgrjri6QuIOqysOqzvOyXkOyEnOuKlCDqtIDssLDtlZwg7KCV7ZmV64+E7JmAIOuzgO2ZlOulvCDrqLzsoIAg67O06rOg7ZWY6rOgLCDruYTtm4jroKgg7J6Q6re57Jy866Gc7J2YIOydvOuwmO2ZlOyXkCDqtIDtlZwg7ZW07ISd7J2AIOyXsOq1rOyEpOqzhOyZgCDsuKHsoJUg7KGw6rG07J2EIOqzoOugpO2VtCDsoJzsi5ztlZzri6QuIOuLqOydvOq1sCDsl7Dqtazsl5DshJwg6rSA7LCw65CcIOuzgO2ZlOunjOycvOuhnCDspJHsnqzsnZgg7J246rO87Zqo6rO866W8IO2Zleygle2VmOyngCDslYrripTri6QuCgp8IOq2jOyepSDtkZztmIQgfCDtlLztlZjqsbDrgpgg67OE64+EIOq3vOqxsOqwgCDtlYTsmpTtlZwg7ZGc7ZiEIHwKfCAtLS0gfCAtLS0gfAp8IOu5hO2biOugqCDsnpDqt7nsl5DshJwg66qp7ZGcIOyekOydjOygle2ZleuPhOqwgCDtlqXsg4HrkJjsl4jri6QuIHwg64uo7Ja07JeQ7IScIOusuOyepeycvOuhnCDsoITsnbTrkJjsl4jri6QuIHwKfCDri6jslrTCt+q1rMK366y47J6lIOyImOykgOyXkOyEnCDsoJXtmZXrj4Qg67OA7ZmU66W8IO2PieqwgO2VmOyYgOuLpC4gfCDslrjslrTri6jsnIQg6rCEIOyghOydtCDqsr3roZzrpbwg7J6F7Kad7ZWY7JiA64ukLiB8Cnwg6rWs7KGw7ZmU65CcIO2PieqwgCDsg4Htmansl5DshJwg67mE7ZuI66CoIOyWtO2cmOyXkCDrjIDtlZwg7IiY7ZaJ7J2EIOy4oeygle2VmOyYgOuLpC4gfCDsnbzsg4Eg64yA7ZmU66GcIOydvOuwmO2ZlOuQmOyXiOuLpC4gfAp8IHVudHJhaW5lZCB3b3JkcyAvIHVudHJhaW5lZCBsZXhpY2FsIGl0ZW1zIHwgbm92ZWwgd29yZHMgLyBwcmV2aW91c2x5IHVuc2VlbiB3b3JkcyB8CgojIyMgNi4g7JuQ6rOg7JeQ7IScIOyCrOyaqe2VoCDtj4nqsIDrqoXCt+uqqeyggcK36rKw6rO8IOyngO2RnAoKfCDqtazrtoQgfCBFbmdsaXNoIHwg7ZWc6rWt7Ja0IHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IO2PieqwgOuqhSB8IFN0dWR5LWRldmVsb3BlZCBzcGVlY2ggZ2VuZXJhbGl6YXRpb24gcHJvYmUgfCDsl7DqtazsnpAg6rCc67CcIOunkOyGjOumrCDsnbzrsJjtmZQg7Y+J6rCAIOqzvOygnCB8Cnwg66qp7KCBIOyEpOuqhSB8IFRvIGV4YW1pbmUgZ2VuZXJhbGl6YXRpb24gb2YgdGFyZ2V0IHNwZWVjaCBzb3VuZHMgdG8gdW50cmFpbmVkIGxleGljYWwgaXRlbXMgYXQgdGhlIHdvcmQsIHBocmFzZSwgYW5kIHNlbnRlbmNlIGxldmVscyB8IOu5hO2biOugqCDslrTtnJjroZzsnZgg66qp7ZGcIOunkOyGjOumrCDsoITsnbTrpbwg64uo7Ja0wrfqtazCt+usuOyepSDsiJjspIDsl5DshJwg7Y+J6rCAIHwKfCDqsrDqs7wg7KeA7ZGcIHwgUHJvYmUgdGFyZ2V0IFBDQyB8IOydvOuwmO2ZlCDtj4nqsIAg6rO87KCc7J2YIOuqqe2RnCDsnpDsnYzsoJXtmZXrj4QgfAp8IOu2gOuhnSDsoIgg7KCc66qpIHwgU3BlZWNoIEdlbmVyYWxpemF0aW9uIFByb2JlOiBDb21wb3NpdGlvbiwgQWRtaW5pc3RyYXRpb24sIGFuZCBTY29yaW5nIHwg66eQ7IaM66asIOydvOuwmO2ZlCDtj4nqsIAg6rO87KCcOiDqtazshLEsIOyLpOyLnCDrsI8g7LGE7KCQIHwKCioq7JiB66y4IOyGjOqwnCDrrLjsnqUqKgoKPiBBIHN0dWR5LWRldmVsb3BlZCBzcGVlY2ggZ2VuZXJhbGl6YXRpb24gcHJvYmUgd2FzIHVzZWQgdG8gZXhhbWluZSBnZW5lcmFsaXphdGlvbiBvZiB0YXJnZXQgc3BlZWNoIHNvdW5kcyB0byB1bnRyYWluZWQgbGV4aWNhbCBpdGVtcyBhdCB0aGUgd29yZCwgcGhyYXNlLCBhbmQgc2VudGVuY2UgbGV2ZWxzLiBUaGUgd29yZHMgd2VyZSBub3QgdXNlZCBpbiBmYWNlLXRvLWZhY2UgdGhlcmFweSBvciBTb3VuZEJyaWRnZSBwcmFjdGljZS4KCioq7ZWc6riAIOuMgOydkSDrrLjsnqUqKgoKPiDsl7DqtazsnpAg6rCc67CcIOunkOyGjOumrCDsnbzrsJjtmZQg7Y+J6rCAIOqzvOygnOulvCDsgqzsmqntlZjsl6wsIOu5hO2biOugqCDslrTtnJjroZzsnZgg66qp7ZGcIOunkOyGjOumrCDsoITsnbTrpbwg64uo7Ja0wrfqtazCt+usuOyepSDsiJjspIDsl5DshJwg7Y+J6rCA7ZWY7JiA64ukLiDtj4nqsIDsl5Ag7IKs7Jqp7ZWcIOuLqOyWtOuKlCDrjIDrqbTsuZjro4zsmYAgU291bmRCcmlkZ2Ug7Jew7Iq17JeQIOyCrOyaqe2VmOyngCDslYrslZjri6QuCgojIyMgNy4g7Jqp7Ja0IOyEoO2DneydmCDqt7zqsbAKCmBzcGVlY2ggcHJvZHVjdGlvbiBwcm9iZWDripQg7IKw7LacIO2PieqwgOudvOuKlCDsoJDsnYAg65Oc65+s64K07KeA66eMIOydtCDsl7DqtazsnZgg7ZW17Ius7J24IOu5hO2biOugqCDslrTtnJjroZzsnZgg7KCE7J20IOuqqeyggeydgCDstqnrtoTtnogg65Oc65+s64K07KeAIOuqu+2VnOuLpC4g7Jew6rWs7J6QIOyEpOuqheyXkCDrlLDrnbwgYHNwZWVjaCBnZW5lcmFsaXphdGlvbiBwcm9iZWDrpbwg7IKs7Jqp7ZWY6rOgLCDssqsg7IaM6rCc7JeQ7IScIOu5hO2biOugqCDslrTtnJjsmYAg7IS4IOyWuOyWtOuLqOychOudvOuKlCDrspTsnITrpbwg66qF7Iuc7ZWc64ukLgoK64uk7J2MIOusuO2XjOydgCDqtIDroKgg67aE7JW87J2YIOyaqeyWtOyZgCDtj4nqsIAg6rWs7ISxIOyCrOuhgOydtOuLpC4g7J20IOyXsOq1rOyXkOyEnCDqsJzrsJztlZwg6rO87KCc7J2YIO2DgOuLueuPhOulvCDsp4HsoJEg7J6F7Kad7ZWY64qUIOq3vOqxsOuKlCDslYTri4jri6QuCgoxLiAqKlByZXN0b24gZXQgYWwuICgyMDE0KS4qKiAqVWx0cmFzb3VuZCB2aXN1YWwgZmVlZGJhY2sgdHJlYXRtZW50IGFuZCBwcmFjdGljZSB2YXJpYWJpbGl0eSBmb3IgcmVzaWR1YWwgc3BlZWNoIHNvdW5kIGVycm9ycy4qIOu5hO2biOugqCDri6jslrTrpbwg7Y+J6rCA7ZWY64qUIGB3b3JkLWxldmVsIHByb2Jlc2Drpbwg7IKs7Jqp7ZWY6rOgLCDsnKDsp4DsmYAg7J2867CY7ZmU66W8IO2PieqwgO2VmOuKlCDrqqnsoIHsnYQg67OE64+E66GcIOyEpOuqhe2VnOuLpC4gW1B1Yk1lZF0oaHR0cHM6Ly9wdWJtZWQubmNiaS5ubG0ubmloLmdvdi8yNTA4NzkzOC8pIMK3IFtET0ldKGh0dHBzOi8vZG9pLm9yZy8xMC4xMDQ0LzIwMTRfSlNMSFItUy0xNC0wMDMxKQoyLiAqKlByZXN0b24gZXQgYWwuICgyMDI0OyBvbmxpbmUgMjAyMykuKiogKkEgUmFuZG9taXplZCBDb250cm9sbGVkIFRyaWFsIG9mIFRyZWF0bWVudCBEaXN0cmlidXRpb24gYW5kIEJpb2ZlZWRiYWNrIEVmZmVjdHMgb24gU3BlZWNoIFByb2R1Y3Rpb24gaW4gU2Nob29sLUFnZSBDaGlsZHJlbiBXaXRoIEFwcmF4aWEgb2YgU3BlZWNoLiogYHNwZWVjaCBwcm9kdWN0aW9uIHByb2JlYCDrsI8gYHVudHJlYXRlZCBwaHJhc2UgcHJvYmVzYOudvOuKlCDtkZztmITsnYQg7IKs7Jqp7ZWY66mwLCDruYTtm4jroKgg6rWs7J2YIOuqqOuwqSDsgrDstpzroZwg7J2867CY7ZmU66W8IO2PieqwgO2VnOuLpC4gW+ybkOusuF0oaHR0cHM6Ly90YWxrYmFuay5vcmcvcGhvbi9hY2Nlc3MvQ2xpbmljYWwvMGRvY3MvcHJlc3RvbjIwMjMucGRmKSDCtyBbRE9JXShodHRwczovL2RvaS5vcmcvMTAuMTA0NC8yMDIzX0pTTEhSLTIyLTAwNjIyKQozLiAqKuyEnOyDiO2drMK37KCV7ZWE7Jewwrfsi6ztmITshK0gKDIwMjEpLioqICpTcGVlY2ggY3Vlc+ulvCDsnbTsmqntlZwg67CY67O17ZuI66Co7J20IOuHjOyEseuniOu5hCDslYTrj5nsnZgg7J6Q7J2M7KCV7ZmV64+EIOuwjyDrp5DrqoXro4zrj4Tsl5Ag66+47LmY64qUIOyYge2WpTog64uo7J2864yA7IOB7Jew6rWsLiog67mE7ZuI66CoIOuLqOyWtMK366y47J6l7J2YIOyekOq3ueydvOuwmO2ZlCDtj4nqsIDsmYAg67mE7ZuI66Co66y47ZWtIOyekOydjOygle2ZleuPhOulvCDqtazrtoTtlZjsl6wg6riw7Iig7ZWc64ukLiBb7JuQ66y4XShodHRwczovL3d3dy5la3Nzcy5vcmcvYXJjaGl2ZS92aWV3X2FydGljbGU/cGlkPXBzcy0xMy0zLTc5KSDCtyBbRE9JXShodHRwczovL2RvaS5vcmcvMTAuMTMwNjQvS1NTUy4yMDIxLjEzLjMuMDc5KQoK7Jew6rWsIOuCtCDsoJXsnZjsmYAg7Iuk7IucwrfssYTsoJAg67Cp7Iud7J2AIOyXsOq1rOyekOqwgCDqsoDthqDtlZwg67aA66GdIGBNdWx0aW1lZGlhX0FwcF8wMV92MC44X3RyYWNrZWRf7Jew6rWs7J6QIOqygO2GoC5kb2N4YCDrsI8gMjAyNi0wOS0zMCDrjIDtmZTsl5DshJwg7KCc7Iuc7ZWcIO2PieqwgCDrqqnsoIHsnYQg6riw7KSA7Jy866GcIOygleumrO2VmOyYgOuLpC4KCiMjIOuzgOqyvSDsnbTroKUKCnwg64Kg7KecIHwg67KE7KCEIHwg64K07JqpIHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IDIwMjYtMDktMzAgfCAwLjEgfCDsmqnslrTsp5Eg7IOd7ISxLiBgW1NBVkUgVGVybV1gIOyggOyepSDqt5zsuZnqs7wgc3BlZWNoIGdlbmVyYWxpemF0aW9uIHByb2Jl7J2YIOyYgeusuMK37ZWc6riAIOygleydmCwg7Y+J6rCAIOy4oeuptCwg7ZW07ISdIOuylOychCwg7JuQ6rOgIO2RnOq4sCDrsI8g6re86rGwIOuTseuhnS4gfAo=</script>
+
+
+<script type="module">
+(async function() {
+	// mermaid sources travel base64-encoded in data-mmd; render with the LATEST mermaid
+	if (document.getElementById('encrypted-data') && !window.__cmdsReady) {
+		await new Promise(function(r) { document.addEventListener('cmds-content-ready', r, { once: true }); });
+	}
+	var containers = Array.from(document.querySelectorAll('.mermaid-container[data-mmd]'));
+	if (!containers.length) return;
+	function decode(b64) {
+		var bin = atob(b64); var bytes = new Uint8Array(bin.length);
+		for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+		return new TextDecoder().decode(bytes);
+	}
+	var sources = containers.map(function(d) { return decode(d.getAttribute('data-mmd')); });
+	var mermaid;
+	try {
+		mermaid = (await import('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs')).default;
+	} catch (e) {
+		containers.forEach(function(d, i) {
+			var pre = document.createElement('pre');
+			pre.textContent = sources[i];
+			d.replaceWith(pre);
+		});
+		return;
+	}
+	var seq = 0;
+	async function renderAll() {
+		var dark = document.documentElement.dataset.theme === 'dark';
+		mermaid.initialize({ startOnLoad: false, theme: dark ? 'dark' : 'neutral', securityLevel: 'strict' });
+		for (var i = 0; i < containers.length; i++) {
+			try {
+				var out = await mermaid.render('cmds-mmd-' + i + '-' + (seq++), sources[i]);
+				containers[i].innerHTML = out.svg;
+			} catch (e) {
+				var pre = document.createElement('pre');
+				pre.textContent = sources[i];
+				containers[i].innerHTML = '';
+				containers[i].appendChild(pre);
+			}
+		}
+	}
+	await renderAll();
+	new MutationObserver(function() { renderAll(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>
+
+
+<script>
+(function() {
+	var icon = document.getElementById('themeIcon');
+	var SUN = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>';
+	var MOON = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+	function paint(theme) {
+		if (icon) icon.innerHTML = theme === 'dark' ? MOON : SUN;
+	}
+	var btn = document.getElementById('themeToggle');
+	if (btn) btn.addEventListener('click', function() {
+		var next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+		document.documentElement.dataset.theme = next;
+		try { localStorage.setItem('cmds-theme', next); } catch(e) {}
+		paint(next);
+	});
+	paint(document.documentElement.dataset.theme || 'light');
+})();
+</script>
+
+<script>
+(function() {
+	var badge = document.getElementById('expiryBadge');
+	if (!badge) return;
+	var ts = Number(badge.getAttribute('data-expires'));
+	if (!ts) return;
+	var ko = badge.getAttribute('data-lang') === 'ko';
+	var text = document.getElementById('expiryText');
+	function render() {
+		var msLeft = ts - Date.now();
+		var d = new Date(ts);
+		var dateStr = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+		if (msLeft <= 0) {
+			text.textContent = ko ? '만료됨' : 'Expired';
+			badge.classList.add('b-expired');
+			// file-hosting backends (GitHub Pages, NAS…) have no server to
+			// 410 an expired share — hide the body here as a soft tombstone
+			var body = document.getElementById('note-content');
+			if (body && !body.dataset.tombstoned) {
+				body.dataset.tombstoned = '1';
+				body.innerHTML = '<p class="cmds-loading">' + (ko ? '이 공유는 만료되었습니다.' : 'This shared note has expired.') + '</p>';
+				var toc = document.getElementById('tocToggle'); if (toc) toc.hidden = true;
+				['mdCopy', 'mdDownload'].forEach(function(id) { var b = document.getElementById(id); if (b) b.hidden = true; });
+			}
+		} else {
+			// calendar-date diff, so "D-1" flips at midnight, not at share-time+24h
+			var now = new Date();
+			var days = Math.round(
+				(new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() -
+				 new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime()) / 86400000
+			);
+			var count = days <= 0 ? (ko ? '오늘 만료' : 'expires today') : 'D-' + days;
+			text.textContent = (ko ? dateStr + ' 만료 · ' : 'Expires ' + dateStr + ' · ') + count;
+			if (days <= 3) badge.classList.add('b-soon');
+		}
+		badge.hidden = false;
+	}
+	render();
+	// keep honest across long-lived tabs (midnight rollover)
+	setInterval(render, 60 * 60 * 1000);
+})();
+</script>
+
+
+<script>
+(function() {
+	var PANELS = { toc: 'tocPanel', graph: 'graphPanel' };
+	var hasToc = false, hasGraph = false;
+
+	function docked() { return document.body.classList.contains('cmds-docked'); }
+
+	function setPanel(name, open) {
+		Object.keys(PANELS).forEach(function(k) {
+			var on = k === name ? open : false;
+			document.getElementById(PANELS[k]).classList.toggle('open', on);
+			document.getElementById(k + 'Toggle').classList.toggle('active', on);
+			try { localStorage.setItem('cmds-panel-' + k, on ? '1' : '0'); } catch(e) {}
+		});
+		if (name === 'graph' && open) requestAnimationFrame(function() { relayoutGraph(); });
+	}
+	function wireToggle(name) {
+		document.getElementById(name + 'Toggle').addEventListener('click', function() {
+			var isOpen = document.getElementById(PANELS[name]).classList.contains('open');
+			setPanel(name, !isOpen);
+		});
+	}
+
+	function setDock(on) {
+		if (on && window.innerWidth <= 1100) on = false;
+		var dock = document.getElementById('sideDock');
+		var toc = document.getElementById('tocPanel');
+		var graph = document.getElementById('graphPanel');
+		document.body.classList.toggle('cmds-docked', on);
+		if (on) {
+			Object.keys(PANELS).forEach(function(k) {
+				document.getElementById(PANELS[k]).classList.remove('open');
+				document.getElementById(k + 'Toggle').classList.remove('active');
+			});
+			if (hasToc) dock.appendChild(toc);
+			if (hasGraph) dock.appendChild(graph);
+			dock.hidden = false;
+		} else {
+			dock.hidden = true;
+			document.body.appendChild(toc);
+			document.body.appendChild(graph);
+		}
+		try { localStorage.setItem('cmds-dock', on ? '1' : '0'); } catch(e) {}
+		if (hasGraph) requestAnimationFrame(function() { relayoutGraph(); });
+	}
+
+	function headings() {
+		return document.querySelectorAll('#note-content h1, #note-content h2, #note-content h3, #note-content h4');
+	}
+
+	function assignHeadingIds() {
+		var used = {};
+		headings().forEach(function(h) {
+			var text = (h.textContent || '').trim();
+			if (!text || h.id) return;
+			var slug = text.toLowerCase().replace(/[^0-9a-z\uAC00-\uD7A3\u3131-\u318E\s-]/g, '').replace(/\s+/g, '-') || 'section';
+			if (used[slug] != null) { used[slug]++; slug = slug + '-' + used[slug]; } else { used[slug] = 0; }
+			h.id = slug;
+		});
+	}
+
+	function buildToc() {
+		var list = document.getElementById('tocList');
+		list.innerHTML = '';
+		headings().forEach(function(h) {
+			var text = (h.textContent || '').trim();
+			if (!text || !h.id) return;
+			var a = document.createElement('a');
+			a.href = '#' + h.id;
+			a.textContent = text;
+			a.className = 'toc-' + h.tagName.toLowerCase();
+			a.title = text;
+			list.appendChild(a);
+		});
+		return list.children.length >= 2;
+	}
+
+	// highlight the section currently in view (and keep it visible in a scrolling TOC)
+	function scrollSpy() {
+		var links = document.querySelectorAll('#tocList a');
+		if (!links.length) return;
+		var map = {};
+		links.forEach(function(a) { map[decodeURIComponent(a.hash.slice(1))] = a; });
+		var obs = new IntersectionObserver(function(entries) {
+			entries.forEach(function(en) {
+				if (!en.isIntersecting) return;
+				links.forEach(function(a) { a.classList.remove('active'); });
+				var a = map[en.target.id];
+				if (a) {
+					a.classList.add('active');
+					if (a.scrollIntoView) a.scrollIntoView({ block: 'nearest' });
+				}
+			});
+		}, { rootMargin: '0px 0px -75% 0px' });
+		headings().forEach(function(h) { if (h.id) obs.observe(h); });
+	}
+
+	var ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15H4.5A2.5 2.5 0 0 1 2 12.5v-8A2.5 2.5 0 0 1 4.5 2h8A2.5 2.5 0 0 1 15 4.5V5"/></svg>';
+	var ICON_CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+	var ICON_LINK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+
+	function enhanceCodeBlocks() {
+		document.querySelectorAll('#note-content pre').forEach(function(pre) {
+			if (pre.querySelector('.code-copy')) return;
+			var code = pre.querySelector('code');
+			var langMatch = ((code ? code.className : '') + ' ' + pre.className).match(/language-([a-z0-9+#-]+)/i);
+			if (langMatch && langMatch[1] !== 'undefined') pre.setAttribute('data-lang', langMatch[1]);
+			var btn = document.createElement('button');
+			btn.className = 'code-copy';
+			btn.setAttribute('aria-label', 'Copy code');
+			btn.innerHTML = ICON_COPY;
+			btn.addEventListener('click', function() {
+				var code = pre.querySelector('code');
+				var textToCopy = (code || pre).innerText.replace(/\n$/, '');
+				navigator.clipboard.writeText(textToCopy).then(function() {
+					btn.innerHTML = ICON_CHECK;
+					btn.classList.add('copied');
+					setTimeout(function() { btn.innerHTML = ICON_COPY; btn.classList.remove('copied'); }, 1500);
+				});
+			});
+			pre.appendChild(btn);
+		});
+	}
+
+	// hover link icon on headings — click copies the deep link
+	function headingAnchors() {
+		headings().forEach(function(h) {
+			if (!h.id || h.querySelector('.h-anchor')) return;
+			var a = document.createElement('a');
+			a.className = 'h-anchor';
+			a.href = '#' + h.id;
+			a.setAttribute('aria-label', 'Copy link to section');
+			a.innerHTML = ICON_LINK;
+			a.addEventListener('click', function(e) {
+				e.preventDefault();
+				history.replaceState(null, '', '#' + h.id);
+				try { navigator.clipboard.writeText(location.href.split('#')[0] + '#' + h.id); } catch(err) {}
+				h.scrollIntoView({ behavior: 'smooth' });
+			});
+			h.appendChild(a);
+		});
+	}
+
+	// ══════════ markdown source tools (copy / download) ══════════
+	function mdSource() {
+		if (window.__cmdsMd != null) return window.__cmdsMd; // decrypted payload
+		var el = document.getElementById('md-source');
+		if (!el) return null;
+		try {
+			var bin = atob(el.textContent.trim());
+			var bytes = new Uint8Array(bin.length);
+			for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+			return new TextDecoder().decode(bytes);
+		} catch(e) { return null; }
+	}
+
+	function wireMdTools() {
+		var md = mdSource();
+		if (md == null) return;
+		var copyBtn = document.getElementById('mdCopy');
+		var dlBtn = document.getElementById('mdDownload');
+		if (copyBtn) {
+			copyBtn.hidden = false;
+			var idle = copyBtn.innerHTML;
+			copyBtn.addEventListener('click', function() {
+				navigator.clipboard.writeText(md).then(function() {
+					copyBtn.innerHTML = ICON_CHECK;
+					copyBtn.classList.add('active');
+					setTimeout(function() { copyBtn.innerHTML = idle; copyBtn.classList.remove('active'); }, 1500);
+				});
+			});
+		}
+		if (dlBtn) {
+			dlBtn.hidden = false;
+			dlBtn.addEventListener('click', function() {
+				var name = (document.title || 'note').replace(/[\\/:*?"<>|]/g, '-').trim() || 'note';
+				var blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+				var url = URL.createObjectURL(blob);
+				var a = document.createElement('a');
+				a.href = url;
+				a.download = name + '.md';
+				document.body.appendChild(a);
+				a.click();
+				a.remove();
+				setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+			});
+		}
+	}
+
+	// ══════════ interactive force-directed local graph ══════════
+	var G = null; // { data, pts, adj, deg, W, H, k, tx, ty, hover }
+
+	function readGraphData() {
+		var dataEl = document.getElementById('graph-data');
+		if (!dataEl) return null;
+		var g;
+		try { g = JSON.parse(dataEl.textContent); } catch(e) { return null; }
+		if (!g.nodes || g.nodes.length < 2) return null;
+		return g;
+	}
+
+	function runLayout(g, W, H) {
+		var N = g.nodes.length;
+		var pts = g.nodes.map(function(n, i) {
+			var a = i * 2.399963;
+			var r = n.level === 0 ? 0 : (n.level === 1 ? 0.35 : 0.7) * Math.min(W, H) / 2;
+			return { x: W / 2 + r * Math.cos(a), y: H / 2 + r * Math.sin(a), vx: 0, vy: 0 };
+		});
+		var SPRING = 0.03, REST = Math.min(W, H) / 3.2, REPEL = Math.min(W, H) * 55, GRAV = 0.008;
+		for (var it = 0; it < 300; it++) {
+			var damp = 0.85 * (1 - it / 340);
+			for (var i = 0; i < N; i++) {
+				for (var j = i + 1; j < N; j++) {
+					var dx = pts[j].x - pts[i].x, dy = pts[j].y - pts[i].y;
+					var d2 = dx * dx + dy * dy + 0.01, d = Math.sqrt(d2);
+					var f = Math.min(REPEL / d2, 8);
+					var fx = (dx / d) * f, fy = (dy / d) * f;
+					pts[i].vx -= fx; pts[i].vy -= fy;
+					pts[j].vx += fx; pts[j].vy += fy;
+				}
+			}
+			g.edges.forEach(function(e) {
+				var a = pts[e[0]], b = pts[e[1]];
+				var dx = b.x - a.x, dy = b.y - a.y;
+				var d = Math.sqrt(dx * dx + dy * dy) + 0.01;
+				var f = SPRING * (d - REST);
+				var fx = (dx / d) * f, fy = (dy / d) * f;
+				a.vx += fx; a.vy += fy;
+				b.vx -= fx; b.vy -= fy;
+			});
+			for (var k2 = 0; k2 < N; k2++) {
+				pts[k2].vx += (W / 2 - pts[k2].x) * GRAV;
+				pts[k2].vy += (H / 2 - pts[k2].y) * GRAV;
+				pts[k2].x += pts[k2].vx * damp;
+				pts[k2].y += pts[k2].vy * damp;
+				pts[k2].vx *= 0.6; pts[k2].vy *= 0.6;
+			}
+			pts[0].x = W / 2; pts[0].y = H / 2; pts[0].vx = 0; pts[0].vy = 0;
+		}
+		var minX = 1e9, maxX = -1e9, minY = 1e9, maxY = -1e9;
+		pts.forEach(function(pt) {
+			minX = Math.min(minX, pt.x); maxX = Math.max(maxX, pt.x);
+			minY = Math.min(minY, pt.y); maxY = Math.max(maxY, pt.y);
+		});
+		var M = 30;
+		var sx = (W - M * 2) / Math.max(maxX - minX, 1), sy = (H - M * 2) / Math.max(maxY - minY, 1);
+		var sc = Math.min(sx, sy, 1.5);
+		pts.forEach(function(pt) {
+			pt.x = M + (pt.x - minX) * sc + (W - M * 2 - (maxX - minX) * sc) / 2;
+			pt.y = M + (pt.y - minY) * sc + (H - M * 2 - (maxY - minY) * sc) / 2;
+		});
+		return pts;
+	}
+
+	function canvasSize() {
+		var canvas = document.getElementById('graphCanvas');
+		var panel = document.getElementById('graphPanel');
+		var wasHidden = !panel.classList.contains('open') && !docked();
+		if (wasHidden) { panel.style.visibility = 'hidden'; panel.classList.add('open'); }
+		var W = Math.max(canvas.clientWidth || panel.clientWidth - 36, 200);
+		var H = docked() ? Math.max(canvas.clientHeight, 200) : 280;
+		if (wasHidden) { panel.classList.remove('open'); panel.style.visibility = ''; }
+		return { W: W, H: H };
+	}
+
+	function relayoutGraph() {
+		var data = G ? G.data : readGraphData();
+		if (!data) return;
+		var sz = canvasSize();
+		var adj = data.nodes.map(function() { return {}; });
+		var deg = data.nodes.map(function() { return 0; });
+		data.edges.forEach(function(e) {
+			adj[e[0]][e[1]] = true; adj[e[1]][e[0]] = true;
+			deg[e[0]]++; deg[e[1]]++;
+		});
+		G = {
+			data: data, adj: adj, deg: deg,
+			pts: runLayout(data, sz.W, sz.H),
+			W: sz.W, H: sz.H, k: 1, tx: 0, ty: 0, hover: -1,
+		};
+		renderGraph();
+	}
+
+	function renderGraph() {
+		if (!G) return;
+		var canvas = document.getElementById('graphCanvas');
+		var dpr = window.devicePixelRatio || 1;
+		canvas.width = G.W * dpr; canvas.height = G.H * dpr;
+		if (!docked()) canvas.style.height = G.H + 'px';
+		var ctx = canvas.getContext('2d');
+		ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+		ctx.clearRect(0, 0, G.W, G.H);
+
+		var css = getComputedStyle(document.documentElement);
+		var noteColor = css.getPropertyValue('--graph-note').trim() || css.getPropertyValue('--accent').trim();
+		var muted = css.getPropertyValue('--muted').trim();
+		var text = css.getPropertyValue('--text').trim();
+		var border = css.getPropertyValue('--border').trim();
+		var cardBg = css.getPropertyValue('--card-bg').trim();
+
+		var g = G.data, pts = G.pts, k = G.k, hover = G.hover;
+		var sx = function(pt) { return pt.x * k + G.tx; };
+		var sy = function(pt) { return pt.y * k + G.ty; };
+		var inHood = function(i) { return hover < 0 || i === hover || G.adj[hover][i]; };
+
+		g.edges.forEach(function(e) {
+			var touches = hover >= 0 && (e[0] === hover || e[1] === hover);
+			if (hover >= 0) {
+				ctx.globalAlpha = touches ? 0.95 : 0.08;
+				ctx.strokeStyle = touches ? muted : border;
+				ctx.lineWidth = touches ? 1.5 : 1;
+			} else {
+				ctx.globalAlpha = (g.nodes[e[0]].level === 2 || g.nodes[e[1]].level === 2) ? 0.45 : 0.8;
+				ctx.strokeStyle = border;
+				ctx.lineWidth = 1;
+			}
+			ctx.beginPath();
+			ctx.moveTo(sx(pts[e[0]]), sy(pts[e[0]]));
+			ctx.lineTo(sx(pts[e[1]]), sy(pts[e[1]]));
+			ctx.stroke();
+		});
+
+		var rOf = function(i) {
+			var base = i === 0 ? 7 : Math.min(3.2 + G.deg[i] * 0.6, 6.5);
+			return base * Math.pow(k, 0.75);
+		};
+		g.nodes.forEach(function(n, i) {
+			var dim = hover >= 0 ? (inHood(i) ? 1 : 0.14) : (n.level === 2 ? 0.65 : 1);
+			ctx.globalAlpha = dim;
+			ctx.fillStyle = n.type === 'tag' ? '#E985A2' : noteColor;
+			ctx.beginPath(); ctx.arc(sx(pts[i]), sy(pts[i]), rOf(i), 0, Math.PI * 2); ctx.fill();
+			if (i === hover) {
+				ctx.strokeStyle = text; ctx.lineWidth = 1.5;
+				ctx.beginPath(); ctx.arc(sx(pts[i]), sy(pts[i]), rOf(i) + 2.5, 0, Math.PI * 2); ctx.stroke();
+			}
+		});
+
+		// labels: center always; L1 at normal zoom; everything once zoomed in;
+		// hovering shows the whole neighborhood regardless of zoom
+		g.nodes.forEach(function(n, i) {
+			var show;
+			if (hover >= 0) show = inHood(i);
+			else show = i === 0 || (n.level === 1 && (k >= 1.05 || g.nodes.length <= 20)) || k >= 1.9 || g.nodes.length <= 12;
+			if (!show) return;
+			var fs = i === 0 || i === hover ? 11.5 : 10.5;
+			ctx.font = (i === 0 || i === hover ? 'bold ' : '') + fs + 'px -apple-system, sans-serif';
+			var label = n.label.length > 22 ? n.label.slice(0, 21) + '…' : n.label;
+			var tw = ctx.measureText(label).width;
+			var lx = Math.max(2, Math.min(G.W - tw - 2, sx(pts[i]) - tw / 2));
+			var ly = sy(pts[i]) + rOf(i) + fs + 2;
+			var alpha = hover >= 0 ? (inHood(i) ? 1 : 0) : (n.level === 2 && k < 2 ? 0.7 : 0.95);
+			ctx.globalAlpha = alpha * 0.8;
+			ctx.fillStyle = cardBg;
+			ctx.fillRect(lx - 3, ly - fs + 1, tw + 6, fs + 3);
+			ctx.globalAlpha = alpha;
+			ctx.fillStyle = i === 0 || i === hover ? text : muted;
+			ctx.fillText(label, lx, ly);
+		});
+		ctx.globalAlpha = 1;
+	}
+
+	function zoomBy(factor) {
+		if (!G) return;
+		var mx = G.W / 2, my = G.H / 2;
+		var nk = Math.max(0.35, Math.min(4.5, G.k * factor));
+		factor = nk / G.k;
+		G.tx = mx - (mx - G.tx) * factor;
+		G.ty = my - (my - G.ty) * factor;
+		G.k = nk;
+		renderGraph();
+	}
+
+	function wireGraphInteraction() {
+		var canvas = document.getElementById('graphCanvas');
+		var dragging = false, moved = false, lastX = 0, lastY = 0;
+
+		document.getElementById('gZoomIn').addEventListener('click', function() { zoomBy(1.35); });
+		document.getElementById('gZoomOut').addEventListener('click', function() { zoomBy(1 / 1.35); });
+		document.getElementById('gReset').addEventListener('click', function() {
+			if (G) { G.k = 1; G.tx = 0; G.ty = 0; renderGraph(); }
+		});
+
+		function pick(mx, my) {
+			if (!G) return -1;
+			var best = -1, bestD = 12 * 12;
+			G.pts.forEach(function(pt, i) {
+				var dx = pt.x * G.k + G.tx - mx, dy = pt.y * G.k + G.ty - my;
+				var d = dx * dx + dy * dy;
+				if (d < bestD) { bestD = d; best = i; }
+			});
+			return best;
+		}
+		function pos(e) {
+			var r = canvas.getBoundingClientRect();
+			return { x: e.clientX - r.left, y: e.clientY - r.top };
+		}
+
+		canvas.addEventListener('wheel', function(e) {
+			if (!G) return;
+			e.preventDefault();
+			var m = pos(e);
+			var factor = Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.002));
+			var nk = Math.max(0.35, Math.min(4.5, G.k * factor));
+			factor = nk / G.k;
+			G.tx = m.x - (m.x - G.tx) * factor;
+			G.ty = m.y - (m.y - G.ty) * factor;
+			G.k = nk;
+			renderGraph();
+		}, { passive: false });
+
+		canvas.addEventListener('pointerdown', function(e) {
+			if (!G) return;
+			dragging = true; moved = false;
+			lastX = e.clientX; lastY = e.clientY;
+			canvas.classList.add('dragging');
+			canvas.setPointerCapture(e.pointerId);
+		});
+		canvas.addEventListener('pointermove', function(e) {
+			if (!G) return;
+			if (dragging) {
+				var dx = e.clientX - lastX, dy = e.clientY - lastY;
+				if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+				G.tx += dx; G.ty += dy;
+				lastX = e.clientX; lastY = e.clientY;
+				renderGraph();
+			} else {
+				var m = pos(e);
+				var h = pick(m.x, m.y);
+				canvas.classList.toggle('on-node', h >= 0);
+				if (h !== G.hover) { G.hover = h; renderGraph(); }
+			}
+		});
+		canvas.addEventListener('pointerup', function(e) {
+			dragging = false;
+			canvas.classList.remove('dragging');
+			// double-click-ish: a clean click on empty space resets the view
+			if (!moved) {
+				var m = pos(e);
+				if (pick(m.x, m.y) < 0 && G.k !== 1) { G.k = 1; G.tx = 0; G.ty = 0; renderGraph(); }
+			}
+		});
+		canvas.addEventListener('pointerleave', function() {
+			if (G && G.hover !== -1) { G.hover = -1; renderGraph(); }
+			canvas.classList.remove('on-node');
+		});
+	}
+
+	function init() {
+		// start from a known-clean panel state before restoring preferences
+		document.body.classList.remove('cmds-docked');
+		document.getElementById('sideDock').hidden = true;
+		assignHeadingIds();
+		enhanceCodeBlocks();
+		headingAnchors();
+		wireMdTools();
+		hasToc = buildToc();
+		if (hasToc) {
+			document.getElementById('tocToggle').hidden = false;
+			wireToggle('toc');
+			scrollSpy();
+		}
+		hasGraph = !!readGraphData();
+		if (hasGraph) {
+			document.getElementById('graphToggle').hidden = false;
+			wireToggle('graph');
+			wireGraphInteraction();
+			new MutationObserver(function() { renderGraph(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+			window.addEventListener('resize', function() {
+				if (docked() && window.innerWidth <= 1100) { setDock(false); return; }
+				if (docked()) requestAnimationFrame(function() { relayoutGraph(); });
+			});
+		}
+		if (hasToc || hasGraph) {
+			document.querySelectorAll('[data-pin]').forEach(function(btn) {
+				btn.addEventListener('click', function() { setDock(!docked()); });
+			});
+			// floating popups close on any click outside the card (docked stays put)
+			document.addEventListener('pointerdown', function(e) {
+				if (docked()) return;
+				if (e.target.closest('.side-panel, .side-tools')) return;
+				Object.keys(PANELS).forEach(function(k) {
+					if (document.getElementById(PANELS[k]).classList.contains('open')) setPanel(k, false);
+				});
+			});
+		}
+		try {
+			if (localStorage.getItem('cmds-dock') === '1' && (hasToc || hasGraph)) {
+				setDock(true);
+			} else if (localStorage.getItem('cmds-panel-toc') === '1' && hasToc) setPanel('toc', true);
+			else if (localStorage.getItem('cmds-panel-graph') === '1' && hasGraph) setPanel('graph', true);
+		} catch(e) {}
+	}
+
+	if (document.getElementById('encrypted-data') && !window.__cmdsReady) {
+		document.addEventListener('cmds-content-ready', init, { once: true });
+	} else {
+		init();
+	}
+})();
+</script>
+
+</body>
+</html>
